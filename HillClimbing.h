@@ -7,6 +7,4 @@ public:
 	
 	HillClimbing() {}
 	~HillClimbing() {}
-
-	//list<HillClimbing*> getSuccessors();
 };
