@@ -172,13 +172,7 @@ bool chooseBestChild(vector<bestMove> bestChildren, int *board, int BOARD_SIZE, 
 	bestMove temp;
 	if (!bestChildren.empty())
 	{
-	//	int randInt = rand() % bestChildren.size();
-		
-		random_device rd;
-		mt19937 gen(rd());
-		uniform_int_distribution<> dis(0, bestChildren.size());
-		int randInt = dis(gen);
-		
+		int randInt = rand() % bestChildren.size();
 		temp = bestChildren[randInt];
 		
 		//prints only for the 1st 3 initial configurations
